@@ -1,10 +1,10 @@
 ﻿# PAN San Menaio
 
-Landing page statica per PAN San Menaio.
+Landing page statica di PAN San Menaio.
 
 ## Sito pubblicabile
 
-La cartella canonica da pubblicare è:
+La cartella canonica è:
 
 PAN-San-Menaio-final/
 
@@ -15,25 +15,14 @@ Contiene:
 - assets/images/
 - assets/video/
 
-## Pubblicazione Netlify
+## Sviluppo
 
-La directory di pubblicazione è definita in netlify.toml:
+Ogni modifica deve essere applicata direttamente dentro PAN-San-Menaio-final.
 
-PAN-San-Menaio-final
+## Pubblicazione
 
-## Legacy build
+La repository è collegata a GitHub:
 
-La cartella legacy-build/ contiene:
+Fulvio23Sk1/pan-san-menaio
 
-- la vecchia base HTML v3-1;
-- gli asset originali;
-- gli script usati per generare una versione precedente.
-
-Non eseguire gli script legacy senza prima verificarli, perché potrebbero
-sovrascrivere PAN-San-Menaio-final/index.html con una versione precedente.
-
-## Asset cocktail
-
-L'immagine cocktail attiva è:
-
-PAN-San-Menaio-final/assets/images/san-menaio/cocktail-spiaggia.webp
+Il deploy definitivo sarà gestito tramite Vercel.
