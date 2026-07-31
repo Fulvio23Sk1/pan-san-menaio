@@ -1,0 +1,17 @@
+﻿# Configurazione locale Claude
+.claude/settings.local.json
+
+# Pacchetti e backup locali
+archive/
+*.zip
+*.bak
+*.tmp
+
+# Dipendenze e cache eventuali
+node_modules/
+.netlify/
+
+# File di sistema
+Thumbs.db
+.DS_Store
+desktop.ini
