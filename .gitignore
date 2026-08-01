@@ -15,3 +15,11 @@ node_modules/
 Thumbs.db
 .DS_Store
 desktop.ini
+# PAN San Menaio - file locali e temporanei
+PAN-San-Menaio-final/index.html.backup*
+PAN-San-Menaio-final/*.mp4
+PAN-San-Menaio-final/assets/video/*-clean.mp4
+PAN-San-Menaio-final/assets/video/*-hq.mp4
+fix-pan-manuale*.ps1
+confronta-video-wa-telegram*.ps1
+crea-video-pan-*.ps1
