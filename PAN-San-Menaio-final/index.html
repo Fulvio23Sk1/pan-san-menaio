@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="it">
 <head>
   <meta charset="utf-8">
@@ -337,6 +337,7 @@
     .service-card { position: relative; min-height: 500px; overflow: hidden; color: var(--white); isolation: isolate; }
     .service-card img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform .6s ease; }
     #cocktail img { object-position: center 52%; }
+    #cucina img { object-position: center 55%; }
     .service-card:hover img { transform: scale(1.035); }
     .service-card::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, transparent 30%, rgba(6,18,26,.86)); }
     .service-card-content { position: absolute; inset: auto clamp(24px, 3vw, 48px) clamp(28px, 4vw, 50px); }
@@ -596,7 +597,16 @@
     .gallery-card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 48%, rgba(5,17,25,.78)); }
     .gallery-card figcaption { position: absolute; z-index: 1; inset: auto 20px 18px; font-size: .65rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
     .slider-progress { height: 2px; margin: 20px clamp(28px, 5vw, 72px) 0; background: rgba(13,29,41,.14); overflow: hidden; }
-    .slider-progress span { display: block; width: 20%; height: 100%; background: var(--navy); transform-origin: left; transition: transform .2s ease; }
+    .slider-progress span {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: var(--navy);
+      transform: scaleX(.18);
+      transform-origin: left center;
+      transition: transform .12s linear;
+      will-change: transform;
+    }
 
     .place-story { display: grid; grid-template-columns: 1.15fr .85fr; min-height: 620px; background: var(--navy); color: var(--white); }
     .place-story-media { min-width: 0; overflow: hidden; }
@@ -1099,15 +1109,15 @@
         <div class="time-point"><div class="time-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M4 3v7M2.5 3v4M5.5 3v4M4 10v11M20 3v18M17.5 3c0 4 0 6 2.5 7"/></svg></div><strong>13:00</strong><span>A tavola</span></div>
         <div class="time-point"><div class="time-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17h16M6 17l3-8h7l2 8M8 13h9M5 20l1-3M19 20l-1-3"/></svg></div><strong>16:00</strong><span>Relax</span></div>
         <div class="time-point"><div class="time-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 16h18M7 16a5 5 0 0 1 10 0"/><path d="M3 20c2-1 4-1 6 0s4 1 6 0 4-1 6 0"/></svg></div><strong>19:30</strong><span>Il tramonto</span></div>
-        <div class="time-point"><div class="time-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16l-8 9-8-9Z"/><path d="M12 13v7M8 20h8M16.5 2 19 4.5"/></svg></div><strong>21:00</strong><span>Cocktail</span></div>
-        <div class="time-point"><div class="time-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16h16M6 16a6 6 0 0 1 12 0M12 8V6M9.5 6h5M3 19h18"/></svg></div><strong>22:30</strong><span>Cena</span></div>
+        <div class="time-point"><div class="time-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16h16M6 16a6 6 0 0 1 12 0M12 8V6M9.5 6h5M3 19h18"/></svg></div><strong>20:30</strong><span>Cena</span></div>
+        <div class="time-point"><div class="time-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16l-8 9-8-9Z"/><path d="M12 13v7M8 20h8M16.5 2 19 4.5"/></svg></div><strong>22:30</strong><span>Cocktail</span></div>
         <div class="time-point"><div class="time-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l10-2v13M9 10l10-2"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/></svg></div><strong>00:00</strong><span>Musica</span></div>
       </div>
     </section>
 
     <section class="service-grid">
       <article class="service-card" id="spiaggia"><img src="assets/images/san-menaio/spiaggia-murge.webp" alt="Scogli e spiaggia delle Murge della Madonna a San Menaio" width="1080" height="720" loading="lazy" decoding="async"><div class="service-card-content reveal"><small>Beach club</small><h3>Spazio. Mare. Libertà.</h3><a class="text-link" href="#prenota">Scopri la spiaggia</a></div></article>
-      <article class="service-card" id="cucina"><img src="assets/images/san-menaio/piana-calenella.webp" alt="Piana di Calenella e costa di San Menaio viste dall’alto" width="1600" height="1200" loading="lazy" decoding="async"><div class="service-card-content reveal"><small>Cucina</small><h3>Territorio che ispira.</h3><a class="text-link" href="#contatti">Scopri il ristorante</a></div></article>
+      <article class="service-card" id="cucina"><img src="assets/images/san-menaio/paposcia-vico-del-gargano.jpg" alt="Paposcia tradizionale di Vico del Gargano farcita con prodotti del territorio" width="1600" height="1200" loading="lazy" decoding="async"><div class="service-card-content reveal"><small>Cucina</small><h3>Territorio che ispira.</h3><a class="text-link" href="#contatti">Scopri il ristorante</a></div></article>
       <article class="service-card" id="cocktail"><img src="assets/images/san-menaio/cocktail-spiaggia.webp" alt="Cocktail servito sulla spiaggia con il mare sullo sfondo" width="1093" height="1900" loading="lazy" decoding="async"><div class="service-card-content reveal"><small>Cocktail bar</small><h3>Mixology. Emozione.</h3><a class="text-link" href="#gallery">Scopri i cocktail</a></div></article>
     </section>
 
@@ -1212,9 +1222,44 @@
       const progress = document.getElementById('sliderProgress');
       let dragging = false, startX = 0, startScroll = 0;
       const step = () => Math.min(slider.clientWidth * .78, 470);
-      const updateProgress = () => { const max = Math.max(1, slider.scrollWidth - slider.clientWidth); progress.style.transform = `scaleX(${Math.max(.18, slider.scrollLeft / max)})`; };
+      const updateProgress = () => {
+        const maxScroll = Math.max(0, slider.scrollWidth - slider.clientWidth);
+        const currentScroll = Math.min(maxScroll, Math.max(0, slider.scrollLeft));
+
+        let ratio = maxScroll <= 1 ? 1 : currentScroll / maxScroll;
+
+        if (maxScroll - currentScroll <= 2) {
+          ratio = 1;
+        }
+
+        ratio = Math.min(1, Math.max(0, ratio));
+
+        const visibleProgress = 0.18 + ratio * 0.82;
+        progress.style.transform = `scaleX(${visibleProgress})`;
+      };
+
+      let progressFrame = null;
+
+      const scheduleProgressUpdate = () => {
+        if (progressFrame !== null) {
+          cancelAnimationFrame(progressFrame);
+        }
+
+        progressFrame = requestAnimationFrame(() => {
+          updateProgress();
+          progressFrame = null;
+        });
+      };
       const move = direction => slider.scrollBy({ left: direction * step(), behavior: 'smooth' });
-      prev.addEventListener('click', () => move(-1)); next.addEventListener('click', () => move(1)); slider.addEventListener('scroll', updateProgress, { passive: true });
+      prev.addEventListener('click', () => move(-1)); next.addEventListener('click', () => move(1)); slider.addEventListener('scroll', scheduleProgressUpdate, { passive: true });
+      window.addEventListener('resize', scheduleProgressUpdate);
+      window.addEventListener('load', updateProgress);
+
+      if ('onscrollend' in window) {
+        slider.addEventListener('scrollend', updateProgress);
+      }
+
+      updateProgress();
       slider.addEventListener('keydown', e => { if (e.key === 'ArrowRight') move(1); if (e.key === 'ArrowLeft') move(-1); });
       slider.addEventListener('pointerdown', e => { dragging = true; startX = e.clientX; startScroll = slider.scrollLeft; slider.setPointerCapture(e.pointerId); });
       slider.addEventListener('pointermove', e => { if (dragging) slider.scrollLeft = startScroll - (e.clientX - startX); });
@@ -1329,3 +1374,4 @@
 </html>
 
 <!-- deploy Vercel collegato a GitHub -->
+
